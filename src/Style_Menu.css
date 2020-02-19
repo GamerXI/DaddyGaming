@@ -1,0 +1,164 @@
+/**{
+	padding: 0;
+	margin: 0;
+}
+*/
+/*.Menu_list{
+	width: 100%;
+	height: 100px;
+	background: black ;
+	width: 100%;
+	text-align: right;
+	padding-right: 100px;
+}
+*/
+/*.Menu_list ul li{
+	display: inline-block;
+	color: white;
+	text-transform: uppercase;
+	list-style: none;
+	letter-spacing: 2px;
+	padding-left: 30px;
+}*/
+
+/*.Header_Menu{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    position: fixed;
+    background-color: transparent;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    background-color: black;
+}*/
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  height: 100vh;
+  line-height: 1.6;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  /* CSS Smooth Scroll */
+  overflow-y: scroll; 
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.lead {
+  font-size: 1.5rem;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100px;
+  width: 100%;
+  text-align: right;
+  padding-right: 100px;
+  background: rgba(0,0,0,0.7);
+  width: 98.9%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+}
+
+.navbar > .active{
+	border-bottom: 1px solid white;
+}
+
+.container > .active{
+	border-bottom: 1px solid white;
+}
+
+.body > .active{
+	border-bottom: 1px solid white;
+}
+
+/*.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}*/
+
+.navbar ul li {
+    display: inline-block;
+	color: white;
+	text-transform: uppercase;
+	list-style: none;
+	letter-spacing: 2px;
+	padding-left: 30px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+.navbar ul li a:hover {
+  color: red;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+ 
+  /* Scroll Snap */
+  scroll-snap-align: center;
+}
+
+section h1 {
+  font-size: 4rem;
+  color: orange;
+}
+
+section h2 {
+  font-size: 4rem;
+  margin-bottom: 100px;
+  color: orange;
+}
+
+/* Section Images */
+section#home {
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('Home.jpg') no-repeat center center/cover;
+}
+section#about {
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('About.jpg') no-repeat center center/cover;
+}
+
+section#service {
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('Service.jpg') no-repeat center center/cover;
+}
+
+section#contact {
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('contact us.jpg') no-repeat center center/cover;
+}
+
+#contact h1 {
+ margin: -20px;	
+}
